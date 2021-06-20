@@ -29,11 +29,11 @@ public class RegistingInfoService {
     
     public LoginInfo saveNewRegister(LoginInfo lgIf)
     {
-
+        LoginInfo lgIF = new LoginInfo();
         Set<Authorization> set = new HashSet<Authorization>();
         set.add(authorRepo.findByName("ROLE_USER"));
         lgIf.setRoles(set);
-        return loginInfoRepo.save(lgIf);
+        return loginInfoRepo.save(lgIF);
     }
     
      
