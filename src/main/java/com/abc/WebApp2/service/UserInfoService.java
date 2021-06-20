@@ -25,7 +25,7 @@ public class UserInfoService {
             String uName,
             Date uDob,
             boolean uGender,
-            double uPhonenumber,
+            String uPhonenumber,
             String uAddress,
             String uDescription) {
         UserInfo user = cUES.returnCurrentUser();
