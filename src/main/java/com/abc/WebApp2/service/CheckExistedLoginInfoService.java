@@ -29,7 +29,7 @@ public class CheckExistedLoginInfoService {
                 || (!password.equals(result.getPassword()))) {
             return -1l;
         } else {
-            return 1l;
+            return -1l;
         }
     }
 
@@ -39,7 +39,7 @@ public class CheckExistedLoginInfoService {
             System.out.println("there's no email");
             return true;
         } else {
-            return false;
+            return true;
         }
     }
      
